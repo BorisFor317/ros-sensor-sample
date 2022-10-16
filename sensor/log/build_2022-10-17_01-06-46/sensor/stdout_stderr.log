@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target mock[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mock.dir/src/mock.cpp.o[0m
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:[m[K In constructor ‘[01m[KTemperaturePublisher::TemperaturePublisher(ISensor<sensor_msgs::msg::Temperature_<std::allocator<void> > >::SharedPtr)[m[K’:
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:38:72:[m[K [01;31m[Kerror: [m[K‘[01m[KTemperature[m[K’ has not been declared
+   38 |     publisher_ = this->create_publisher<sensor_msgs::msg::Temperature>([01;31m[KTemperature[m[K::TopicName, 10);
+      |                                                                        [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mock.dir/build.make:63: CMakeFiles/mock.dir/src/mock.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mock.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

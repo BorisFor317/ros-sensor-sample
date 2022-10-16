@@ -1,0 +1,64 @@
+[0.018s] Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor -DCMAKE_INSTALL_PREFIX=/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor
+[0.027s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.060s] -- Found PythonInterp: /home/borisfor317/.pyenv/shims/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.060s] -- Using PYTHON_EXECUTABLE: /home/borisfor317/.pyenv/shims/python3
+[0.192s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.220s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.224s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.271s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.291s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.343s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.380s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.381s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.382s] -- Looking for pthread.h
+[0.426s] -- Looking for pthread.h - found
+[0.426s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.469s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.469s] -- Looking for pthread_create in pthreads
+[0.505s] -- Looking for pthread_create in pthreads - not found
+[0.505s] -- Looking for pthread_create in pthread
+[0.547s] -- Looking for pthread_create in pthread - found
+[0.547s] -- Found Threads: TRUE  
+[0.644s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.709s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.710s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.710s] -- Configured cppcheck include dirs: 
+[0.711s] -- Configured cppcheck exclude dirs and/or files: 
+[0.712s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.712s] -- Configured cpplint exclude dirs and/or files: 
+[0.712s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.713s] -- Added test 'lint_cmake' to check CMake code style
+[0.713s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.714s] -- Added test 'uncrustify' to check C / C++ code style
+[0.715s] -- Configured uncrustify additional arguments: 
+[0.715s] -- Added test 'xmllint' to check XML markup files
+[0.717s] -- Configuring done
+[0.722s] -- Generating done
+[0.723s] -- Build files have been written to: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor
+[0.727s] Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor -DCMAKE_INSTALL_PREFIX=/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor
+[0.729s] Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12
+[0.754s] [35m[1mScanning dependencies of target mock[0m
+[0.776s] [ 50%] [32mBuilding CXX object CMakeFiles/mock.dir/src/mock.cpp.o[0m
+[2.571s] [100%] [32m[1mLinking CXX executable mock[0m
+[2.665s] [100%] Built target mock
+[2.672s] Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12
+[2.691s] Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor
+[2.696s] -- Install configuration: ""
+[2.696s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/lib/sensor/mock
+[2.697s] -- Set runtime path of "/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/lib/sensor/mock" to ""
+[2.697s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/ament_index/resource_index/package_run_dependencies/sensor
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/ament_index/resource_index/parent_prefix_path/sensor
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/ament_prefix_path.sh
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/ament_prefix_path.dsv
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/path.sh
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/path.dsv
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.bash
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.sh
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.zsh
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.dsv
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/package.dsv
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/ament_index/resource_index/packages/sensor
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/cmake/sensorConfig.cmake
+[2.698s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/cmake/sensorConfig-version.cmake
+[2.699s] -- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/package.xml
+[2.701s] Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor

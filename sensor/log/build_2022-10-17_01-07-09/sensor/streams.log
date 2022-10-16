@@ -1,0 +1,36 @@
+[0.021s] Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/build/sensor -- -j12 -l12
+[0.037s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.068s] -- Using PYTHON_EXECUTABLE: /home/borisfor317/.pyenv/shims/python3
+[0.193s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.218s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.220s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.298s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.330s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.331s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.423s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.495s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.552s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.558s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.559s] -- Configured cppcheck include dirs: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/include
+[0.559s] -- Configured cppcheck exclude dirs and/or files: 
+[0.564s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.565s] -- Configured cpplint exclude dirs and/or files: 
+[0.565s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.567s] -- Added test 'lint_cmake' to check CMake code style
+[0.568s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.574s] -- Added test 'uncrustify' to check C / C++ code style
+[0.574s] -- Configured uncrustify additional arguments: 
+[0.575s] -- Added test 'xmllint' to check XML markup files
+[0.576s] -- Configuring done
+[0.581s] -- Generating done
+[0.583s] -- Build files have been written to: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/build/sensor
+[0.601s] [35m[1mScanning dependencies of target mock[0m
+[0.612s] [ 50%] [32mBuilding CXX object CMakeFiles/mock.dir/src/mock.cpp.o[0m
+[2.404s] [100%] [32m[1mLinking CXX executable mock[0m
+[2.494s] /usr/bin/ld: CMakeFiles/mock.dir/src/mock.cpp.o: in function `rclcpp::Publisher<sensor_msgs::msg::Temperature_<std::allocator<void> >, std::allocator<void> >::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::QoS const&, rclcpp::PublisherOptionsWithAllocator<std::allocator<void> > const&)':
+[2.494s] mock.cpp:(.text._ZN6rclcpp9PublisherIN11sensor_msgs3msg12Temperature_ISaIvEEES4_EC2EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE[_ZN6rclcpp9PublisherIN11sensor_msgs3msg12Temperature_ISaIvEEES4_EC5EPNS_15node_interfaces17NodeBaseInterfaceERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKNS_3QoSERKNS_29PublisherOptionsWithAllocatorIS4_EE]+0x6e): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<sensor_msgs::msg::Temperature_<std::allocator<void> > >()'
+[2.494s] collect2: error: ld returned 1 exit status
+[2.494s] make[2]: *** [CMakeFiles/mock.dir/build.make:131: mock] Error 1
+[2.495s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mock.dir/all] Error 2
+[2.495s] make: *** [Makefile:141: all] Error 2
+[2.496s] Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/build/sensor -- -j12 -l12

@@ -1,0 +1,11 @@
+[0.023s] Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12
+[0.048s] [35m[1mScanning dependencies of target mock[0m
+[0.064s] [ 50%] [32mBuilding CXX object CMakeFiles/mock.dir/src/mock.cpp.o[0m
+[0.125s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Ksensor.hpp: No such file or directory
+[0.125s]     8 | #include [01;31m[K"sensor.hpp"[m[K
+[0.125s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.125s] compilation terminated.
+[0.127s] make[2]: *** [CMakeFiles/mock.dir/build.make:63: CMakeFiles/mock.dir/src/mock.cpp.o] Error 1
+[0.127s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mock.dir/all] Error 2
+[0.127s] make: *** [Makefile:141: all] Error 2
+[0.128s] Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12

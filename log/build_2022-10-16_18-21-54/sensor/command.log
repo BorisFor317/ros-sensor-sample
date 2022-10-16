@@ -1,0 +1,2 @@
+Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor': /usr/bin/cmake /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor -DCMAKE_INSTALL_PREFIX=/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor
+Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor' returned '1': /usr/bin/cmake /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor -DCMAKE_INSTALL_PREFIX=/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor
