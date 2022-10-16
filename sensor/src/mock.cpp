@@ -4,31 +4,22 @@
 #include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/temperature.hpp"
 #include "sensor/sensor.hpp"
+#include "sensor_msgs/msg/temperature.hpp"
 
 using namespace std::chrono_literals;
 
 /* This example creates a subclass of Node and uses std::bind() to register a
  * member function as a callback from the timer. */
 
-template <typename T>
-struct ISensor {
-  using SharedPtr = std::shared_ptr<ISensor<T>>;
-
-  virtual T read() = 0;
-};
-
-template <typename T>
-class ConstantSensor : public ISensor<T> {
+template <typename TMessage> class ConstantSensor : public ISensor<TMessage> {
 public:
-  ConstantSensor(T value) : value_(value) {}
-  ConstantSensor() : value_(T()) {}
+  ConstantSensor(TMessage value) : value_(value) {}
 
-  T read() { return value_; }
+  TMessage read() { return value_; }
 
 private:
-  T value_;
+  TMessage value_;
 };
 
 class TemperaturePublisher : public rclcpp::Node {
@@ -42,9 +33,10 @@ public:
 
 private:
   void timer_callback() const {
-    RCLCPP_INFO(get_logger(), "reading from %s", get_name()); 
     auto reading = sensor_->read();
     publisher_->publish(reading);
+    RCLCPP_INFO(get_logger(), "read from %s and published to %s", get_name(),
+                publisher_->get_topic_name());
   }
 
   rclcpp::TimerBase::SharedPtr timer_;
@@ -54,7 +46,10 @@ private:
 
 int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
-  auto temperature_sensor = std::make_shared<ConstantSensor<Temperature::Msg>>(Temperature::Msg());
+  auto temperature = Temperature::Msg();
+  temperature.temperature = 5;
+  auto temperature_sensor =
+      std::make_shared<ConstantSensor<Temperature::Msg>>(temperature);
   auto temperature_publisher =
       std::make_shared<TemperaturePublisher>(temperature_sensor);
   rclcpp::spin(temperature_publisher);

@@ -1,3 +1,17 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/sensor"
+    "cmake.sourceDirectory": "${workspaceFolder}/sensor",
+    "files.associations": {
+        "optional": "cpp",
+        "random": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "new": "cpp",
+        "numeric": "cpp",
+        "*.tcc": "cpp",
+        "cmath": "cpp",
+        "utility": "cpp",
+        "variant": "cpp",
+        "functional": "cpp",
+        "istream": "cpp"
+    }
 }

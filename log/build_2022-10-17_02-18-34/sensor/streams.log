@@ -1,0 +1,17 @@
+[0.023s] Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12
+[0.048s] [35m[1mScanning dependencies of target client[0m
+[0.060s] [ 50%] Built target mock
+[0.064s] [ 75%] [32mBuilding CXX object CMakeFiles/client.dir/src/client.cpp.o[0m
+[0.845s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:41:3:[m[K [01;31m[Kerror: [m[Kneed ‘[01m[Ktypename[m[K’ before ‘[01m[Krclcpp::Subscription<TMessage>::SharedPtr[m[K’ because ‘[01m[Krclcpp::Subscription<TMessage>[m[K’ is a dependent scope
+[0.845s]    41 |   [01;31m[Krclcpp[m[K::Subscription<TMessage>::SharedPtr subscription_;
+[0.845s]       |   [01;31m[K^~~~~~[m[K
+[0.845s]       |   [32m[Ktypename [m[K
+[0.846s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:[m[K In constructor ‘[01m[KSensorRosReader<TMessage>::SensorRosReader(std::string)[m[K’:
+[0.847s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+[0.847s]    33 |     [01;31m[Ksubscription_[m[K = create_subscription<TMessage>(
+[0.847s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.847s]       |     [32m[Krcl_subscription_t[m[K
+[1.640s] make[2]: *** [CMakeFiles/client.dir/build.make:63: CMakeFiles/client.dir/src/client.cpp.o] Error 1
+[1.640s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/client.dir/all] Error 2
+[1.640s] make: *** [Makefile:141: all] Error 2
+[1.641s] Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12

@@ -1,0 +1,15 @@
+[35m[1mScanning dependencies of target client[0m
+[ 50%] Built target mock
+[ 75%] [32mBuilding CXX object CMakeFiles/client.dir/src/client.cpp.o[0m
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:41:3:[m[K [01;31m[Kerror: [m[Kneed ‘[01m[Ktypename[m[K’ before ‘[01m[Krclcpp::Subscription<TMessage>::SharedPtr[m[K’ because ‘[01m[Krclcpp::Subscription<TMessage>[m[K’ is a dependent scope
+   41 |   [01;31m[Krclcpp[m[K::Subscription<TMessage>::SharedPtr subscription_;
+      |   [01;31m[K^~~~~~[m[K
+      |   [32m[Ktypename [m[K
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:[m[K In constructor ‘[01m[KSensorRosReader<TMessage>::SensorRosReader(std::string)[m[K’:
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+   33 |     [01;31m[Ksubscription_[m[K = create_subscription<TMessage>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Krcl_subscription_t[m[K
+make[2]: *** [CMakeFiles/client.dir/build.make:63: CMakeFiles/client.dir/src/client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

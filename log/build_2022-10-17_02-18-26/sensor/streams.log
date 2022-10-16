@@ -1,0 +1,27 @@
+[0.021s] Invoking command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12
+[0.047s] [35m[1mScanning dependencies of target client[0m
+[0.058s] [ 50%] Built target mock
+[0.062s] [ 75%] [32mBuilding CXX object CMakeFiles/client.dir/src/client.cpp.o[0m
+[0.851s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:41:3:[m[K [01;31m[Kerror: [m[Kneed ‘[01m[Ktypename[m[K’ before ‘[01m[Krclcpp::Subscription<TMessage>::SharedPtr[m[K’ because ‘[01m[Krclcpp::Subscription<TMessage>[m[K’ is a dependent scope
+[0.851s]    41 |   [01;31m[Krclcpp[m[K::Subscription<TMessage>::SharedPtr subscription_;
+[0.851s]       |   [01;31m[K^~~~~~[m[K
+[0.851s]       |   [32m[Ktypename [m[K
+[0.853s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:[m[K In constructor ‘[01m[KSensorRosReader<TMessage>::SensorRosReader(std::string)[m[K’:
+[0.853s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+[0.853s]    33 |     [01;31m[Ksubscription_[m[K = create_subscription<TMessage>(
+[0.853s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.853s]       |     [32m[Krcl_subscription_t[m[K
+[0.853s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:35:64:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[0.853s]    35 |         std::bind(&SensorRosReader::reading_callback, this, _1)[01;31m[K;[m[K);
+[0.854s]       |                                                                [01;31m[K^[m[K
+[0.854s]       |                                                                [32m[K)[m[K
+[0.854s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:33:50:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[0.854s]    33 |     subscription_ = create_subscription<TMessage>[01;36m[K([m[K
+[0.854s]       |                                                  [01;36m[K^[m[K
+[0.854s] [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/client.cpp:35:65:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[0.854s]    35 |         std::bind(&SensorRosReader::reading_callback, this, _1);[01;31m[K)[m[K;
+[0.854s]       |                                                                 [01;31m[K^[m[K
+[1.100s] make[2]: *** [CMakeFiles/client.dir/build.make:63: CMakeFiles/client.dir/src/client.cpp.o] Error 1
+[1.100s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/client.dir/all] Error 2
+[1.100s] make: *** [Makefile:141: all] Error 2
+[1.101s] Invoked command in '/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor -- -j12 -l12
