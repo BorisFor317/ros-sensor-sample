@@ -1,0 +1,47 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /home/borisfor317/.pyenv/shims/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/build/sensor
+[35m[1mScanning dependencies of target client[0m
+[ 50%] Built target mock
+[ 75%] [32mBuilding CXX object CMakeFiles/client.dir/src/client.cpp.o[0m
+[100%] [32m[1mLinking CXX executable client[0m
+[100%] Built target client
+-- Install configuration: ""
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/lib/sensor/mock
+-- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/lib/sensor/client
+-- Set runtime path of "/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/lib/sensor/client" to ""
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/ament_index/resource_index/package_run_dependencies/sensor
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/ament_index/resource_index/parent_prefix_path/sensor
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/ament_prefix_path.sh
+-- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/path.sh
+-- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/environment/path.dsv
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.bash
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.sh
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.zsh
+-- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/local_setup.dsv
+-- Installing: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/package.dsv
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/ament_index/resource_index/packages/sensor
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/cmake/sensorConfig.cmake
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/cmake/sensorConfig-version.cmake
+-- Up-to-date: /home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/install/sensor/share/sensor/package.xml

@@ -1,35 +1,34 @@
-// #include <memory>
+#include <memory>
 
-// #include "rclcpp/rclcpp.hpp"
-// #include "sensor_msgs/msg/temperature.hpp"
-// #include "sensor.hpp"
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/temperature.hpp"
+#include "sensor/sensor.hpp"
 
-// using std::placeholders::_1;
+using std::placeholders::_1;
 
-// class SensorSubscriber : public rclcpp::Node
-// {
-//   public:
-//     SensorSubscriber()
-//     : Node("minimal_subscriber")
-//     {
-//       subscription_ = this->create_subscription<TemperatureMsg>(
-//       "topic", 10, std::bind(&SensorSubscriber::topic_callback, this, _1));
-//     }
+class SensorSubscriber : public rclcpp::Node
+{
+  public:
+    SensorSubscriber()
+    : Node("minimal_subscriber")
+    {
+      subscription_ = this->create_subscription<Temperature::Msg>(
+      Temperature::TopicName, 10, std::bind(&SensorSubscriber::topic_callback, this, _1));
+    }
 
-//   private:
-//     using TemperatureMsg = sensor_msgs::msg::Temperature;
-//     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
+  private:
+    rclcpp::Subscription<Temperature::Msg>::SharedPtr subscription_;
 
-//     void topic_callback(const std_msgs::msg::String::SharedPtr msg) const
-//     {
-//       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
-//     }
-// };
+    void topic_callback(const Temperature::Msg::SharedPtr msg) const
+    {
+      RCLCPP_INFO(get_logger(), "I heard temperature: %f", msg->temperature);
+    }
+};
 
-// int main(int argc, char * argv[])
-// {
-//   rclcpp::init(argc, argv);
-//   rclcpp::spin(std::make_shared<SensorSubscriber>());
-//   rclcpp::shutdown();
-//   return 0;
-// }
+int main(int argc, char * argv[])
+{
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<SensorSubscriber>());
+  rclcpp::shutdown();
+  return 0;
+}

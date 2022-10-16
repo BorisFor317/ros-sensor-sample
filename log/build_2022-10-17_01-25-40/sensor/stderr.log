@@ -1,0 +1,27 @@
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:6[m[K:
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:[m[K In member function ‘[01m[Kvoid TemperaturePublisher::timer_callback() const[m[K’:
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:46:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+   46 |     RCLCPP_INFO_ONCE([01;31m[Knode[m[K->get_logger(), "reading %s sensor", node->get_name());
+      |                      [01;31m[K^~~~[m[K
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:46:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |     [01;31m[KRCLCPP_INFO_ONCE[m[K(node->get_logger(), "reading %s sensor", node->get_name());
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:46:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |     [01;31m[KRCLCPP_INFO_ONCE[m[K(node->get_logger(), "reading %s sensor", node->get_name());
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/borisfor317/Workspace/mecaro/_interview/cpp-test-ros/sensor/src/mock.cpp:46:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |     [01;31m[KRCLCPP_INFO_ONCE[m[K(node->get_logger(), "reading %s sensor", node->get_name());
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mock.dir/build.make:63: CMakeFiles/mock.dir/src/mock.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mock.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

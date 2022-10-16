@@ -4,8 +4,8 @@
 #include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "sensor/sensor.hpp"
 #include "sensor_msgs/msg/temperature.hpp"
+#include "sensor/sensor.hpp"
 
 using namespace std::chrono_literals;
 
@@ -33,15 +33,16 @@ private:
 
 class TemperaturePublisher : public rclcpp::Node {
 public:
-  TemperaturePublisher(ISensor<Temperature::Msg>::SharedPtr sensor)
+  explicit TemperaturePublisher(ISensor<Temperature::Msg>::SharedPtr sensor)
       : Node("temperature_sensor"), sensor_(sensor) {
-    publisher_ = this->create_publisher<Temperature::Msg>(Temperature::TopicName, 10);
-    timer_ = this->create_wall_timer(
+    publisher_ = create_publisher<Temperature::Msg>(Temperature::TopicName, 10);
+    timer_ = create_wall_timer(
         500ms, std::bind(&TemperaturePublisher::timer_callback, this));
   }
 
 private:
-  void timer_callback() {
+  void timer_callback() const {
+    RCLCPP_INFO(get_logger(), "reading from %s", get_name()); 
     auto reading = sensor_->read();
     publisher_->publish(reading);
   }
@@ -53,7 +54,7 @@ private:
 
 int main(int argc, char *argv[]) {
   rclcpp::init(argc, argv);
-  auto temperature_sensor = std::make_shared<ConstantSensor<Temperature::Msg>>();
+  auto temperature_sensor = std::make_shared<ConstantSensor<Temperature::Msg>>(Temperature::Msg());
   auto temperature_publisher =
       std::make_shared<TemperaturePublisher>(temperature_sensor);
   rclcpp::spin(temperature_publisher);

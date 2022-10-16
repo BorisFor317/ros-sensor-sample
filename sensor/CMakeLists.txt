@@ -20,8 +20,12 @@ include_directories(include)
 add_executable(mock src/mock.cpp)
 ament_target_dependencies(mock rclcpp sensor_msgs)
 
+add_executable(client src/client.cpp)
+ament_target_dependencies(client rclcpp sensor_msgs)
+
 install(TARGETS
   mock
+  client
   DESTINATION lib/${PROJECT_NAME})
 
 # uncomment the following section in order to fill in
